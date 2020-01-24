@@ -1,0 +1,26 @@
+package com.lbs.rest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.lbs.entity.Register;
+import com.lbs.entity.Status;
+import com.lbs.repository.RegisterRepository;
+
+@RestController
+@CrossOrigin
+public class RegisterController {
+
+	@Autowired
+	private RegisterRepository registerRepository;
+	
+	public Status register(@RequestBody Register reg) {
+		registerRepository.save(reg);
+		
+		Status status = new Status();
+		status.setStatusCode(100);
+		status.setStatusMessage("Registration Successfull!!!");
+	}
+}
