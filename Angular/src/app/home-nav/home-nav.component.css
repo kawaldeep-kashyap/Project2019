@@ -1,0 +1,31 @@
+.image{
+    height:39.6em; background-size:cover; width:auto;
+    background-image:url('https://cdn.pixabay.com/photo/2019/02/04/17/20/cafeteria-3975175_1280.jpg');
+    
+    background-position:50% 50%;
+  }
+
+    .image .btn {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .centered {
+    position: absolute;
+    font-family: cursive;
+    color: antiquewhite;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
