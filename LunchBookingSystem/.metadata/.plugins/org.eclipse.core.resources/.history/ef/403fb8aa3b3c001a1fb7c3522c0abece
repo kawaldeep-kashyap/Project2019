@@ -1,0 +1,7 @@
+package com.lbs.entity;
+
+public class Status {
+	private int statusCode;
+	private String statusMessage;
+	private Customer loggedInCustomer;
+}
